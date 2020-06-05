@@ -1,0 +1,29 @@
+@import "~src/assets/_include.scss";
+
+.container {
+  padding: 40px 48px;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.filter-container {
+  mat-form-field {
+    width: 300px;
+  }
+}
+
+.table-wrapper {
+  width: 100%;
+  margin-top: 24px;
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+
+    td.col-name {
+      color: $blue-light;
+    }
+  }
+}

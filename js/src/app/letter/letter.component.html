@@ -1,0 +1,69 @@
+<div fxLayout="column" class="container">
+  <div fxLayout="row" fxLayoutGap="23px" class="filter-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Subject12345</mat-label>
+      <!-- <mat-select [(ngModel)]="filterParams.subject"> -->
+      <mat-select>
+        <mat-option [value]="'All'">
+          All
+        </mat-option>
+        <!-- <mat-option *ngFor="let item of subjects" [value]="item">
+          {{item}}
+        </mat-option> -->
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Audience</mat-label>
+      <!-- <mat-select [(ngModel)]="filterParams.audience"> -->
+      <mat-select>
+        <mat-option [value]="'All'">
+          All
+        </mat-option>
+        <!-- <mat-option *ngFor="let item of audiences" [value]="item">
+          {{item}}
+        </mat-option> -->
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Market Segment</mat-label>
+      <!-- <mat-select [(ngModel)]="filterParams.marketSegment"> -->
+      <mat-select>
+        <mat-option [value]="'All'">
+          All
+        </mat-option>
+        <!-- <mat-option *ngFor="let item of marketSegments" [value]="item">
+          {{item}}
+        </mat-option> -->
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="table-wrapper">
+    <table class="app-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Audience</th>
+          <th>Market Segment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr *ngFor="let letter of filteredLetters"> -->
+        <tr>
+          <td class="col-name">
+            <!-- <a [routerLink]="['/dashboard/letter-detail']" [queryParams]="queryParameter(letter.id)" >{{ letter.name }}</a> -->
+            a
+          </td>
+          <td>cool</td>
+          <td>cool</td>
+          <td>cool</td>
+          <!-- <td>{{ arrayToString(letter.subject) }}</td>
+          <td>{{ arrayToString(letter.audience) }}</td>
+          <td>{{ arrayToString(letter.marketSegment) }}</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

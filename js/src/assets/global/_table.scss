@@ -1,0 +1,36 @@
+.table-wrapper {
+  padding: 21px 20px 16px 17px;
+  border-radius: 4px;
+  border: 1px solid $gray-border;
+
+  table.app-table {
+    text-align: left;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 16px;
+    }
+
+    th {
+      @include opensans-semibold;
+      font-size: 16px;
+      color: $black-light;
+      line-height: 24px;
+    }
+
+    td {
+      font-size: 14px;
+      color: $black-light;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      vertical-align: top;
+    }
+
+    tbody {
+      tr {
+        border-top: 1px solid $gray-border;
+      }
+    }
+  }
+}
